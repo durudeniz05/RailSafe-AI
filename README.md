@@ -1,73 +1,43 @@
-# React + TypeScript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+🚅 Problem
+Yüksek hızlı demiryolu ağları, binlerce sayfalık teknik dökümantasyon ve karmaşık hata kodları (ETCS/ERTMS) üzerinde çalışır. Bir saha teknisyeni kritik bir arıza ile karşılaştığında:
 
-Currently, two official plugins are available:
+Dökümanlar arasında vakit kaybeder (Yüksek MTTR süreleri).
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Manuel analiz sırasında insan hatası riski artar.
 
-## React Compiler
+Ray üzerindeki fiziksel engellerin anlık tespiti için ek bir dijital göze ihtiyaç duyulur. 
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+✨ Çözüm
+RailSafe AI, "Vibe Coding" yaklaşımıyla geliştirilmiş, iki ana modüle sahip bir karar destek sistemidir:
 
-## Expanding the ESLint configuration
+AI Tanı Merkezi (Diagnostic): Google Gemini API kullanılarak yapılandırılan "Kıdemli Sinyalizasyon Mühendisi" asistanı. Girilen ETCS hata kodlarını uluslararası standartlara göre saniyeler içinde analiz eder. 
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+Güvenlik İzleme (Security): Ray hattını dijital bir gözle tarayan YOLOv5 bilgisayarlı görü simülasyonu. Nesne tespiti durumunda gerçek zamanlı "OBSTACLE DETECTED" uyarısı verir. 
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+📺 Canlı Demo
+Yayın Linki:https://railsafeai.lovable.app/
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+Demo Videosu (Loom):https://www.loom.com/share/c2be811a29a24e25bf86225dd6c9213a
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+🛠️ Kullanılan Teknolojiler (Tech Stack)
+Frontend: React, Vite, Tailwind CSS (Modern ve endüstriyel UI). 
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Yapay Zeka: Google Gemini 3.1 Pro (Senior Engineer Personası). 
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+Geliştirme Araçları: VS Code, GitHub Copilot, Lovable. 
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+Strateji: Vibe Coding ve Agentic AI İş Akışı. 
+
+🚀 Nasıl Çalıştırılır?
+Projeyi yerel bilgisayarınızda çalıştırmak için:
+
+Depoyu klonlayın: git clone [repo-linkiniz]
+
+Ana dizine gidin: cd RailSafe-AI
+
+Bağımlılıkları kurun: npm install
+
+.env dosyasına Gemini API anahtarınızı ekleyin: VITE_GEMINI_API_KEY=your_key
+
+Uygulamayı başlatın: npm run devs
