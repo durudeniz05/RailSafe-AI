@@ -26,8 +26,6 @@ Demo Videosu (Loom):https://www.loom.com/share/c2be811a29a24e25bf86225dd6c9213a
 
 🚀 NASIL ÇALIŞTIRILIR?
 
-Proje artık Lovable AI Gateway kullandığı için yerel kurulumda harici bir API anahtarı kurulumuna gerek duymaz.
-
 Depoyu klonlayın: git clone
 
 Ana dizine gidin: cd RailSafe-AI
