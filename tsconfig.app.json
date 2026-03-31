@@ -18,7 +18,7 @@
     "noUnusedParameters": true,
     "paths": {
       "@/*": [
-        "features/*"
+        "./features/*"
       ]
     },
     "skipLibCheck": true,
