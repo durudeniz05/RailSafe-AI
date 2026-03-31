@@ -17,7 +17,7 @@ Dosya Yapısı: Briefing uyumlu features/ tabanlı kaynak kod mimarisi.
 
 📺 Canlı Demo
 
-Yayın Linki:https://railsafeai.lovable.app/
+Yayın Linki:https://railsafe-ai.lovable.app
 
 Demo Videosu (Loom):https://www.loom.com/share/c2be811a29a24e25bf86225dd6c9213a
 
