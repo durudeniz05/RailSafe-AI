@@ -16,7 +16,7 @@ Stack: React, Vite, Tailwind CSS v4.
 
 AI Altyapısı: Google Gemini 3.1 Pro (Edge Function & Lovable AI Gateway ile güvenli entegrasyon). 
 
-Dosya Yapısı: Briefing uyumlu features/ tabanlı kaynak kod mimarisi. 
+Dosya Yapısı: features/ tabanlı kaynak kod mimarisi. 
 
 📺 Canlı Demo
 
